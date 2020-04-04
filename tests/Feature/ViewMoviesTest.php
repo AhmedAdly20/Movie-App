@@ -49,7 +49,7 @@ class ViewMoviesTest extends TestCase
             'https://api.themoviedb.org/3/search/movie?query=jumanji' => $this->fakeSearchMovies(),
         ]);
 
-        Livewire::test('search-dropdown')
+        Livewire::test('search-drop-down')
             ->assertDontSee('jumanji')
             ->set('search', 'jumanji')
             ->assertSee('Jumanji');
